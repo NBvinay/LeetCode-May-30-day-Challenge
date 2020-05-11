@@ -44,6 +44,6 @@ class Solution:
             return image 
         
         recursivePaint(image,sr,sc,newColor,image[sr][sc])
+        
         return image
             
-        

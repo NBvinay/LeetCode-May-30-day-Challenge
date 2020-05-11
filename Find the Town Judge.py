@@ -9,7 +9,6 @@
 
 # If the town judge exists and can be identified, return the label of the town judge.  Otherwise, return -1.
 
- 
 
 # Example 1:
 
