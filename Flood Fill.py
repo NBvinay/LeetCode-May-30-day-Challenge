@@ -46,4 +46,38 @@ class Solution:
         recursivePaint(image,sr,sc,newColor,image[sr][sc])
 
         return image
+
+
+# Java Solution: 0ms :
+# UNCOMMENT FROM BELOW:
+
+# class Solution {
+#     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
+        
+#         if (image[sr][sc] == newColor)
+#             return image ;
+#         recursivePaint(image,sr,sc,newColor,image[sr][sc]);
+#         return image;
+        
+#     }
+    
+#     public static void recursivePaint(int[][] image, int sr, int sc, int newColor,int baseColor) {
+        
+#             image[sr][sc] = newColor; 
+        
+#             if (sr+1 < image.length && image[sr+1][sc] == baseColor)
+#                 recursivePaint(image,sr+1,sc,newColor,baseColor);
+        
+#             if (sr-1 >= 0 && image[sr-1][sc] == baseColor)
+#                 recursivePaint(image,sr-1,sc,newColor,baseColor);  
+        
+#             if (sc -1 >= 0 && image[sr][sc-1]==baseColor)
+#                 recursivePaint(image,sr,sc-1,newColor,baseColor) ;  
+        
+#             if (sc + 1 < image[0].length && image[sr][sc+1]==baseColor)
+#                 recursivePaint(image,sr,sc+1,newColor,baseColor);
+        
+#     }
+# }
+
             
