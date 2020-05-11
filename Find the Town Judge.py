@@ -67,6 +67,7 @@ class Solution:
         
         # below is a better approach for the same problem : 
         
+        
         if len(trust) == 0:
             return 1
         judge = [] 
@@ -83,4 +84,3 @@ class Solution:
             if d[key] == N-1 and  key in judge:
                 return key
         return -1
-            
